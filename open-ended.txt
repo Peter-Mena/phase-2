@@ -1,0 +1,16 @@
+question one: Explain the different types of files in Linux (regular, directory, symbolic link, device, etc.) and how to check them with commands.
+
+regular: The most common type. Contains data, text, scripts, images, binaries, etc.
+command: ls -l filename
+
+directory: A special file that contains references (entries) to other files and directories.
+command: ls -ld directoryname
+
+symbolic link: A pointer to another file or directory. It's like a shortcut.
+command: ls -l symlink_name
+
+Hard Link: Another name for an existing file (points to the same inode).it's like a copy.
+command: ls -l
+
+device: Provides unbuffered access to hardware devices, one character at a time (e.g., terminals, serial ports).
+command: ls -l /dev/null 
