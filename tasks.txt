@@ -1,0 +1,25 @@
+task-one: Inside iot_logger, create logs/temperature.log and scripts/sensor_script.py.
+cd iot_logger
+cd logs
+touch temperature.log
+cd ..
+cd scripts
+touch sensor_script.py
+
+task-two: Copy /etc/services into data and search for patterns like ssh or http.
+cd ..
+grep -i 'ssh\|http' data/services
+
+task-three: Use regex to find lines starting with t or containing numbers.
+grep -E '^[tT]|[0-9]' data/services
+
+task-four: Locate .txt files in /home/<username> and remove temporary ones if needed.
+find /home/peter -type f -name "*.txt"
+
+task-four: Create hard and symbolic links for temperature.log.
+cd 
+cd iot_logger
+cd logs
+mkdir -p links
+ln temperature.log links/hard_link_temperature.log
+ln -s temperature.log links/sym_link_temperature.log
