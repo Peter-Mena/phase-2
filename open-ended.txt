@@ -14,3 +14,14 @@ command: ls -l
 
 device: Provides unbuffered access to hardware devices, one character at a time (e.g., terminals, serial ports).
 command: ls -l /dev/null 
+
+
+question two: What’s the difference between a hard link and a symbolic link? Give real examples of when to use each.
+
+Hard Link: an additional name (directory entry) for the same file data on disk. It points directly to the inode
+example: if you need a certain file in more than one directory and you may delete one of them and you need the data to be saved.
+
+Symbolic Link: A symbolic link is a separate file that contains a path to another file or directory. It's like a shortcut.
+example: it is like a file and we make a shortcut to other directory to open it quickly.
+
+
