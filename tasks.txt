@@ -23,3 +23,8 @@ cd logs
 mkdir -p links
 ln temperature.log links/hard_link_temperature.log
 ln -s temperature.log links/sym_link_temperature.log
+
+task-six: Display directory structure to confirm organization
+cd
+cd iot_logger
+tree
