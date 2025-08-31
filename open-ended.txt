@@ -24,4 +24,7 @@ example: if you need a certain file in more than one directory and you may delet
 Symbolic Link: A symbolic link is a separate file that contains a path to another file or directory. It's like a shortcut.
 example: it is like a file and we make a shortcut to other directory to open it quickly.
 
-
+question three: is rmdir the same as rm -r when deleting directories? Explain
+No, rmdir is not the same as rm -r
+rmdir : only deletes empty directories.
+rm -r : deletes the directory and all its contents, even if it has files or subfolders.
