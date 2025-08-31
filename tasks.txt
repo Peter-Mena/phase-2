@@ -16,7 +16,7 @@ grep -E '^[tT]|[0-9]' data/services
 task-four: Locate .txt files in /home/<username> and remove temporary ones if needed.
 find /home/peter -type f -name "*.txt"
 
-task-four: Create hard and symbolic links for temperature.log.
+task-five: Create hard and symbolic links for temperature.log.
 cd 
 cd iot_logger
 cd logs
